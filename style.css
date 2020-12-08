@@ -1,0 +1,435 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+nav a{
+  outline: none;
+}
+
+nav{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Seção você */
+
+#fotoKe img{
+  width: 100%;
+  height: 540px;
+}
+
+
+
+#textos h5{
+  color: #f6b93b;
+}
+#textos h2{
+  color: #fff;
+
+}
+#ke{
+  transition: all 0.7s;
+}
+
+#reeves{
+  transition: all 0.7s;
+}
+#textos h6{
+  color: #ced6e0;
+}
+
+header li a{
+  margin: 0 10px;
+}
+
+
+@media (max-width: 576px){
+  #fotoKe{
+    text-align: center;
+  }
+
+  #fotoKe img{
+    width: 90%;
+    height: 300px;
+  }
+  
+  #textos{
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+
+  #textos h5{
+  color: #f6b93b;
+  
+  }
+  #textos h2{
+    color: #fff;
+    font-size: 60px;
+  }
+  #ke{
+    transition: all 0.7s;
+  }
+
+  #reeves{
+    transition: all 0.7s;
+  }
+  #textos h6{
+    color: #ced6e0;
+  }
+
+  header li a{
+    margin: 0 10px;
+  }
+
+  #botao-textos{
+    margin-top: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* Seção biografia */
+
+
+#biografia{
+  width: 100%;
+  height: 100%;
+}
+
+#fundo-biografia{
+  width: 70%;
+  height: 400px;
+  background: url('fotos/13.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+}
+
+#area-imagem-biografia{
+  background: #ecf0f1;
+  text-align: center;
+  width: 70%;
+  padding: 10px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+#imagem-biografia img{
+  width: 100%;
+}
+
+#texto-biografia-imagem h2{
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+#texto-biografia{
+  text-align: center;
+}
+
+#texto-biografia h1{
+  color: #fff;
+  margin-top: 25px;
+}
+
+#texto-biografia p{
+  font-size: 22px;
+  color: #fff;
+}
+#borda{
+  border: 2px solid #f6b93b;
+  width: 200px;
+  margin: 0 auto;
+  background: #f6b93b;
+}
+
+
+
+@media (max-width: 576px){
+  #biografia{
+    width: 100%;
+    height: 100%;
+    background: url('fotos/13.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #fundo-biografia{
+    display: none;
+  }
+
+
+  #area-imagem-biografia{
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  #texto-biografia p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seção Filmes */
+
+#secao-filmes{
+  margin-top: 100px;
+  text-align: center;
+}
+
+#secao-filmes img{
+  width: 85%;
+  height: 230px;
+}
+
+
+#area-filmes h1{
+  text-align: center;
+}
+
+#area-filmes h4{
+  font-size: 18px;
+}
+
+#area-filmes i{
+  color: #f1c40f;
+}
+
+#foto1{
+  margin-top: 10px;
+}
+
+#foto2{
+  margin-top: 10px;
+}
+
+#foto3{
+  margin-top: 10px;
+}
+
+#foto4{
+  margin-top: 10px;
+}
+
+
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#link-button{
+  margin: 0 auto;
+}
+
+#button{
+  background: none;
+  border: 2px solid #f1c40f;
+  color: #a4b0be;
+  padding: 12px 20px;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  margin: 0 auto;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+#button:hover{
+  color: #57606f;
+}
+
+#button::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f6e58d;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+#button::before{
+  transform: scaleX(0);
+}
+
+#button:hover::before{
+  transform: scaleX(1);
+}
+
+@media (max-width: 576px){
+  #secao-filmes img{
+    width: 65%;
+    height: 200px;
+  }
+
+  #area-filmes h4{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  #foto1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #foto2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #foto3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #foto4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seção trip */
+footer{
+  margin-top: 25px;
+}
+
+#trip{
+  margin-bottom: 0;
+}
+
+
+#borda-trip{
+  border: 2px solid #f6b93b;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background: #f6b93b;
+}
+
+
+
+#trip-area{
+  padding: 30px;
+  padding-top: 0;
+}
+
+
+#trip-area img{
+  width: 100%;
+}
+
+
+
+@media (max-width: 576px){
+  #trip-area{
+    padding: 0;
+    margin: 0 auto;
+  }
+
+
+  #trip-area img{
+    width: 100%;
+  }
+
+}
+
+footer h5{
+  margin-top: 20px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+  font-size: 18px;
+  color: #dcdde1;
+}
+
+footer li a{
+  font-size: 18px;
+  color: #dcdde1;
+  text-decoration: none;
+}
+
+footer li a:hover{
+  text-decoration: none;
+  color: #ced6e0;
+}
+
+
+
+#icones{
+  margin-top: 20px;
+}
+
+#icones a{
+  color: #fff;
+  margin: 0 5px;
+}   
+
+#icones a:hover{
+  color: #dcdde1;
+}   
